@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kids Dream Costume Centre | Quality Children's Costumes in Ghana</title>
+    <meta name="description" content="Kids Dream Costume Centre offers premium children's costumes for career day, biblical events, and character themes. Based in Accra, Ghana with delivery across the country.">
+    <meta name="keywords" content="kids costumes, children costumes, Ghana, career day costumes, biblical costumes, character costumes, Accra">
+    <meta name="author" content="Kids Dream Costume Centre">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Performance Monitoring Indicator -->
+    <div class="performance-indicator" id="performance-indicator">
+        Loading...
+    </div>
+    
+    <!-- Page Loader -->
+    <div class="page-loader">
+        <div class="loader-content">
+            <div class="loader-logo">
+                <span class="logo-kids">Kids</span> 
+                <span class="logo-dream-costume">Dream Costume</span> 
+                <span class="logo-centre">Centre</span>
+            </div>
+            <div class="loader-bar">
+                <div class="loader-progress"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Floating elements for playful effect -->
+    <div class="floating-element"></div>
+    <div class="floating-element"></div>
+    <div class="floating-element"></div>
+    <div class="floating-element"></div>
+
+    <!-- Accent Animations -->
+    <div id="accent-animations"></div>
+
+    <!-- Image Modal with Gallery -->
+    <div id="image-modal" class="image-modal">
+        <span class="close-modal">&times;</span>
+        <button class="modal-nav modal-prev">&lt;</button>
+        <button class="modal-nav modal-next">&gt;</button>
+        <div class="image-modal-content">
+            <img id="modal-image" src="" alt="Enlarged view">
+        </div>
+        <div class="modal-counter">
+            <span id="current-image">1</span> / <span id="total-images">1</span>
+        </div>
+    </div>
+
+    <!-- Header and Navigation -->
+    <header>
+        <div class="container">
+            <nav class="main-nav">
+                <div class="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <div class="logo-container">
+                    <img src="IMAGES/Logo nn.jpg" alt="Kids Dream Costume Centre Logo" class="logo-img" loading="lazy">
+                    <div class="logo">
+                        <span class="logo-kids">Kids</span> 
+                        <span class="logo-dream-costume">Dream Costume</span> 
+                        <span class="logo-centre">Centre</span>
+                    </div>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#" class="nav-link" data-page="home">HOME</a></li>
+                    <li><a href="#" class="nav-link" data-page="store">SHOP</a></li>
+                    <li><a href="#" class="nav-link" data-page="account">ACCOUNT</a></li>
+                    <li><a href="#" class="nav-link" data-page="contact">CONTACT</a></li>
+                </ul>
+                <div class="nav-icons">
+                    <div class="user-account">
+                        <i class="fas fa-user"></i>
+                        <div class="user-dropdown">
+                            <a href="#" class="nav-link" data-page="account">My Account</a>
+                            <a href="#" class="nav-link" data-page="orders">Order History</a>
+                            <a href="#" id="logout-btn">Logout</a>
+                        </div>
+                    </div>
+                    <a href="#" class="nav-link cart-icon" data-page="cart">
+                        <i class="fas fa-shopping-bag"></i>
+                        <span class="cart-count">0</span>
+                    </a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Home Page -->
+    <div id="home-page" class="page active">
+        <!-- Hero Section with Slider -->
+        <section class="hero">
+            <div class="hero-slider">
+                <div class="slide">
+                    <img src="IMAGES/surgeon.jpg" alt="Kids Dream Costume Centre" loading="lazy">
+                    <div class="slide-content">
+                        <div class="career-badge">CAREER DAY COLLECTION</div>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="IMAGES/biblical costume.jpg" alt="Biblical Costumes" loading="lazy">
+                    <div class="slide-content">
+                        <div class="career-badge">BIBLICAL COLLECTION</div>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="IMAGES/character costume.jpg" alt="Character Costumes" loading="lazy">
+                    <div class="slide-content">
+                        <div class="career-badge">CHARACTER COLLECTION</div>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="IMAGES/kids lapcoat ban.jpg" alt="Lab Coats & Accessories" loading="lazy">
+                    <div class="slide-content">
+                        <div class="career-badge">LABCOAT & ACCESSORIES COLLECTION</div>
+                    </div>
+                </div>
+            </div>
+            <div class="slider-dots">
+                <span class="dot active" data-slide="0"></span>
+                <span class="dot" data-slide="1"></span>
+                <span class="dot" data-slide="2"></span>
+                <span class="dot" data-slide="3"></span>
+            </div>
+        </section>
+
+        <!-- Shop Sections -->
+        <section class="shop-sections">
+            <div class="container">
+                <h2 class="section-title">COSTUME CATEGORIES</h2>
+                <div class="shop-grid">
+                    <div class="shop-card" data-page="store" style="--animation-order: 1">
+                        <div class="shop-image">
+                            <img src="IMAGES/lawyer (2).jpg" alt="Career Day Costumes" loading="lazy">
+                        </div>
+                        <h3>Career Day Costumes</h3>
+                        <p>Inspire your child with costumes representing various professions.</p>
+                        <a href="#" class="btn nav-link" data-page="store">SHOP NOW</a>
+                    </div>
+                    <div class="shop-card" data-page="store" style="--animation-order: 2">
+                        <div class="shop-image">
+                            <img src="IMAGES/biblical girl.jpg" alt="Biblical Costumes" loading="lazy">
+                        </div>
+                        <h3>Biblical Costumes</h3>
+                        <p>Perfect for church events, nativity plays, and religious celebrations.</p>
+                        <a href="#" class="btn nav-link" data-page="store">SHOP NOW</a>
+                    </div>
+                    <div class="shop-card" data-page="store" style="--animation-order: 3">
+                        <div class="shop-image">
+                            <img src="IMAGES/princess.png" alt="Character Costumes" loading="lazy">
+                        </div>
+                        <h3>Character Costumes</h3>
+                        <p>From superheroes to princesses, we have all your child's favorites.</p>
+                        <a href="#" class="btn nav-link" data-page="store">SHOP NOW</a>
+                    </div>
+                    <div class="shop-card" data-page="store" style="--animation-order: 4">
+                        <div class="shop-image">
+                            <img src="IMAGES/kids labcoat.jpg" alt="Lab Coats & Accessories" loading="lazy">
+                        </div>
+                        <h3>Lab Coats & Accessories</h3>
+                        <p>Complete the look with our realistic accessories and lab coats.</p>
+                        <a href="#" class="btn nav-link" data-page="store">SHOP NOW</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Products Section -->
+        <section class="featured-products">
+            <div class="container">
+                <h2 class="section-title">FEATURED PRODUCTS</h2>
+                <div class="featured-products-grid">
+                    <!-- Featured products will be added here with JavaScript -->
+                </div>
+                <div class="view-all-btn">
+                    <a href="#" class="btn nav-link" data-page="store">VIEW ALL PRODUCTS</a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Store Page -->
+    <div id="store-page" class="page">
+        <!-- Shop Page Banner -->
+        <section class="page-banner" style="background-image: url('https://images.unsplash.com/photo-1534452203293-494d7ddbf7e0?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80');">
+            <div class="page-banner-content">
+                <!-- Banner content can be added here if needed -->
+            </div>
+        </section>
+
+        <!-- Store Header -->
+        <section class="store-header">
+            <div class="container">
+                <div class="promo-code">Kids Dream Costume Centre</div>
+            </div>
+        </section>
+
+        <!-- Sale Banner -->
+        <section class="sale-banner">
+            <div class="container">
+                Quality Costumes for Children of All Ages
+            </div>
+        </section>
+
+        <!-- Filters Section -->
+        <section class="filters">
+            <div class="container">
+                <div class="filter-options">
+                    <div class="filter-group">
+                        <span class="filter-label">Category:</span>
+                        <div class="filter-dropdown">
+                            <button class="filter-btn" id="category-filter">
+                                All Categories <i class="fas fa-chevron-down"></i>
+                            </button>
+                            <div class="category-dropdown">
+                                <a href="#" data-category="all">All Categories</a>
+                                <a href="#" data-category="Career Day">Career Day</a>
+                                <a href="#" data-category="Biblical">Biblical</a>
+                                <a href="#" data-category="Character">Character</a>
+                                <a href="#" data-category="Accessories">Accessories</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Store Products Section -->
+        <section class="store-products-section">
+            <div class="container">
+                <div class="products-header">
+                    <h2>ALL COSTUMES</h2>
+                    <div class="products-count">Showing <span id="products-count">0</span> products</div>
+                </div>
+                
+                <div class="store-products-grid">
+                    <!-- Products will be added here with JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Load More Section -->
+        <section class="load-more">
+            <div class="container">
+                <div class="viewing-info">Viewing all products</div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Account Page -->
+    <div id="account-page" class="page">
+        <section class="account-section">
+            <div class="container">
+                <h2 class="section-title">My Account</h2>
+                
+                <div class="account-tabs">
+                    <div class="account-tab active" data-tab="login">Login</div>
+                    <div class="account-tab" data-tab="register">Register</div>
+                    <div class="account-tab" data-tab="orders">Order History</div>
+                </div>
+                
+                <div class="account-content active" id="login-content">
+                    <div class="contact-form" style="max-width: 500px; margin: 0 auto;">
+                        <h3>Login to Your Account</h3>
+                        <form id="login-form">
+                            <div class="form-group">
+                                <label for="login-email">Email Address</label>
+                                <input type="email" id="login-email" required>
+                                <div class="error-message">Please enter a valid email address</div>
+                            </div>
+                            <div class="form-group">
+                                <label for="login-password">Password</label>
+                                <input type="password" id="login-password" required>
+                                <div class="error-message">Password is required</div>
+                            </div>
+                            <button type="submit" class="btn">Login</button>
+                        </form>
+                    </div>
+                </div>
+                
+                <div class="account-content" id="register-content">
+                    <div class="contact-form" style="max-width: 500px; margin: 0 auto;">
+                        <h3>Create an Account</h3>
+                        <form id="register-form">
+                            <div class="form-group">
+                                <label for="register-name">Full Name</label>
+                                <input type="text" id="register-name" required>
+                                <div class="error-message">Please enter your full name</div>
+                            </div>
+                            <div class="form-group">
+                                <label for="register-email">Email Address</label>
+                                <input type="email" id="register-email" required>
+                                <div class="error-message">Please enter a valid email address</div>
+                            </div>
+                            <div class="form-group">
+                                <label for="register-phone">Phone Number</label>
+                                <input type="tel" id="register-phone" required>
+                                <div class="error-message">Please enter a valid phone number</div>
+                            </div>
+                            <div class="form-group">
+                                <label for="register-password">Password</label>
+                                <input type="password" id="register-password" required>
+                                <div class="error-message">Password must be at least 6 characters</div>
+                            </div>
+                            <div class="form-group">
+                                <label for="register-confirm">Confirm Password</label>
+                                <input type="password" id="register-confirm" required>
+                                <div class="error-message">Passwords do not match</div>
+                            </div>
+                            <button type="submit" class="btn">Register</button>
+                        </form>
+                    </div>
+                </div>
+                
+                <div class="account-content" id="orders-content">
+                    <h3>Order History</h3>
+                    <table class="order-history">
+                        <thead>
+                            <tr>
+                                <th>Order #</th>
+                                <th>Date</th>
+                                <th>Items</th>
+                                <th>Total</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody id="order-history-body">
+                            <!-- Order history will be populated here -->
+                        </tbody>
+                    </table>
+                    <div id="no-orders" style="text-align: center; padding: 40px; display: none;">
+                        <p>You haven't placed any orders yet.</p>
+                        <a href="#" class="btn nav-link" data-page="store" style="margin-top: 20px;">Start Shopping</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Cart Page -->
+    <div id="cart-page" class="page">
+        <section class="cart-section">
+            <div class="container">
+                <h2 class="section-title">Your Shopping Cart</h2>
+                
+                <div class="cart-items">
+                    <!-- Cart items will be added here with JavaScript -->
+                    <div class="empty-cart-message" style="text-align: center; padding: 60px 0;">
+                        <p>Your cart is currently empty.</p>
+                        <a href="#" class="btn nav-link" data-page="store" style="margin-top: 20px;">Continue Shopping</a>
+                    </div>
+                </div>
+                
+                <div class="cart-summary">
+                    <div class="summary-row">
+                        <span>Subtotal:</span>
+                        <span id="subtotal">GH₵ 0.00</span>
+                    </div>
+                    
+                    <div class="delivery-options">
+                        <label for="delivery-location">Delivery Location:</label>
+                        <select id="delivery-location" class="delivery-select">
+                            <option value="">Select your location</option>
+                            <option value="0">Pick up at store - GH₵ 0</option>
+                            <option value="35">Accra - GH₵ 35</option>
+                            <option value="35">Teshie - GH₵ 35</option>
+                            <option value="35">OSU - GH₵ 35</option>
+                            <option value="35">East Legon - GH₵ 35</option>
+                            <option value="35">Airport Residential Area - GH₵ 35</option>
+                            <option value="35">Cantonments - GH₵ 35</option>
+                            <option value="35">Labone - GH₵ 35</option>
+                            <option value="35">Dansoman - GH₵ 35</option>
+                            <option value="35">Madina - GH₵ 35</option>
+                            <option value="35">Adenta - GH₵ 35</option>
+                            <option value="35">Tema - GH₵ 35</option>
+                            <option value="35">Ashaiman - GH₵ 35</option>
+                        </select>
+                    </div>
+                    
+                    <div class="summary-row">
+                        <span>Delivery Fee:</span>
+                        <span id="delivery-fee">GH₵ 0.00</span>
+                    </div>
+                    
+                    <div class="summary-row summary-total">
+                        <span>Total:</span>
+                        <span id="total-amount">GH₵ 0.00</span>
+                    </div>
+                    
+                    <div class="payment-options">
+                        <h3>Select Payment Method</h3>
+                        <div class="payment-option">
+                            <div class="payment-icon">₵</div>
+                            <div>
+                                <strong>MTN Mobile Money</strong><br>
+                                <small>Send payment to: <strong>059 518 3757</strong></small><br>
+                                <small>Steps: 1. Dial *170# 2. Choose "Send Money" 3. Enter number 4. Enter amount 5. Enter reference</small>
+                            </div>
+                        </div>
+                        <div class="payment-option">
+                            <div class="payment-icon">₵</div>
+                            <div>
+                                <strong>Bank Transfer</strong><br>
+                                <small>Bank: <strong>GCB Bank</strong></small><br>
+                                <small>Account Name: <strong>Kids Dream Costume Centre</strong></small><br>
+                                <small>Account Number: <strong>1234567890123</strong></small>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="checkout-form">
+                        <h3>Customer Information</h3>
+                        <div class="form-group">
+                            <label for="customer-name">Full Name</label>
+                            <input type="text" id="customer-name" required>
+                            <div class="error-message">Please enter your full name</div>
+                        </div>
+                        <div class="form-group">
+                            <label for="customer-email">Email Address</label>
+                            <input type="email" id="customer-email" required>
+                            <div class="error-message">Please enter a valid email address</div>
+                        </div>
+                        <div class="form-group">
+                            <label for="customer-phone">Phone Number</label>
+                            <input type="tel" id="customer-phone" required>
+                            <div class="error-message">Please enter a valid phone number</div>
+                        </div>
+                        <div class="form-group">
+                            <label for="customer-address">Delivery Address</label>
+                            <input type="text" id="customer-address" required>
+                            <div class="error-message">Please enter your delivery address</div>
+                        </div>
+                    </div>
+                    
+                    <button class="btn whatsapp-btn" style="width: 100%;" id="whatsapp-order">
+                        <i class="fab fa-whatsapp"></i> Order via WhatsApp (0240302040)
+                    </button>
+                    
+                    <button class="btn" style="width: 100%; margin-top: 10px;" id="proceed-checkout">Proceed to Checkout</button>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Contact Page -->
+    <div id="contact-page" class="page">
+        <!-- Contact Page Banner -->
+        <section class="page-banner">
+            <img src="IMAGES/contact pic.jpg" alt="Contact Us - Kids Dream Costume Centre" style="width: 100%; height: 100%; object-fit: cover; position: absolute; top: 0; left: 0;" loading="lazy">
+            <div class="page-banner-content">
+                <h1>Contact Us</h1>
+                <p>Get in touch with us for any inquiries, custom orders, or assistance with your costume needs</p>
+            </div>
+        </section>
+
+        <section class="contact-section">
+            <div class="container">
+                <h2 class="section-title">Contact Us</h2>
+                
+                <div class="contact-grid">
+                    <div class="contact-form">
+                        <h3>Send us a Message</h3>
+                        <form id="contactForm">
+                            <div class="form-group">
+                                <label for="name">Your Name</label>
+                                <input type="text" id="name" required>
+                                <div class="error-message">Please enter your name</div>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email Address</label>
+                                <input type="email" id="email" required>
+                                <div class="error-message">Please enter a valid email address</div>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone">
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" rows="5" required></textarea>
+                                <div class="error-message">Please enter your message</div>
+                            </div>
+                            <button type="submit" class="btn">Send Message</button>
+                        </form>
+                    </div>
+                    
+                    <div class="contact-info">
+                        <h3>Get in Touch</h3>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div>
+                                <h4>Our Location</h4>
+                                <p>Dansoman Sakaman, Accra, Ghana</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div>
+                                <h4>Phone Number</h4>
+                                <p>+233 24 030 2040</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div>
+                                <h4>Email Address</h4>
+                                <p>kidsdreamcostumecenter@gmail.com</p>
+                               
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div>
+                                <h4>Business Hours</h4>
+                                <p>Monday - Friday: 8:00 AM - 6:00 PM</p>
+                                <p>Saturday: 9:00 AM - 4:00 PM</p>
+                                <p>Sunday: Closed</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3970.455239752911!2d-0.20038538523730404!3d5.650667295906381!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdf9c7d7c8b345b%3A0x7a7e6d1c8e4e4b0!2sAccra%2C%20Ghana!5e0!3m2!1sen!2sus!4v1620000000000!5m2!1sen!2sus" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Invoice Modal -->
+    <div id="invoice-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Order Invoice</h2>
+                <span class="close-modal">&times;</span>
+            </div>
+            <div id="invoice-content">
+                <!-- Invoice content will be generated here -->
+            </div>
+            <div style="margin-top: 20px; text-align: center;">
+                <button class="btn" id="send-email">Send to Email</button>
+                <button class="btn whatsapp-btn" id="send-whatsapp">Send via WhatsApp</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="shipping-info">
+                <p>Based in Accra, Ghana - Delivery across Ghana</p>
+            </div>
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h4>NAVIGATION</h4>
+                    <ul>
+                        <li><a href="#" class="nav-link" data-page="home">Homepage</a></li>
+                        <li><a href="#" class="nav-link" data-page="store">Shop Page</a></li>
+                        <li><a href="#" class="nav-link" data-page="account">My Account</a></li>
+                        <li><a href="#" class="nav-link" data-page="cart">Cart Page</a></li>
+                        <li><a href="#" class="nav-link" data-page="contact">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>FOLLOW US</h4>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.tiktok.com" target="_blank"><i class="fab fa-tiktok"></i></a>
+                        <a href="https://api.whatsapp.com/send?phone=233240302040" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h4>CONTACT INFO</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> Dansoman, Sakaman, Accra, Ghana</p>
+                    <p><i class="fas fa-phone"></i> +233240302040</p>
+                    <p><i class="fas fa-envelope"></i> kidsdreamcostumecenter@gmail.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Kids Dream Costume Centre. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://api.whatsapp.com/send?phone=233240302040&text=Hello%20Kids%20Dream%20Costume%20Centre!%20I%20would%20like%20to%20inquire%20about%20your%20costumes." 
+       class="whatsapp-float" 
+       target="_blank"
+       aria-label="Contact us on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+        <span class="whatsapp-tooltip">Chat with us on WhatsApp!</span>
+    </a>
+
+    <!-- JavaScript File -->
+    <script src="script.js"></script>
+</body>
+</html>
